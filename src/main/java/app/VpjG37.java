@@ -1,16 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package app;
 
-/**
- *
- * @author User
- */
 public class VpjG37 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        upr1_zad1();
     }
+    
+    static void upr1_zad1() {
+        // Аз съм Иван Иванов, фн 12345, и уча програмиране.
+        System.out.printf("Аз съм %s, фн %s, и уча %s%n", "Ивайло Танев", "128152", "програмиране");
+    }
+    
+    
 }
