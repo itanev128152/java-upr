@@ -6,7 +6,7 @@ public class VpjG37 {
     static Scanner reader = new Scanner(System.in);
 
     public static void main(String[] args) {
-        upr1_zad2();
+        upr1_zad3();
     }
     
     static void upr1_zad1() {
@@ -37,5 +37,23 @@ public class VpjG37 {
         double stepen = Math.pow(ch1, ch2);
         
         System.out.printf("%d %.0f", sbor, stepen);
+    }
+
+    static void upr1_zad3() {
+        //Метод zad_3, който прочита една буква и извежда: A или a → Отлично!, B/b → Много добре, C/c →
+        //Добре, D/d → Зле!, във всички останали случаи → Провал!
+        //Използвайте switch със стрелка
+        char symbol = reader.next().charAt(0);
+        String text;
+        
+        switch(symbol) {
+            case 'A', 'a' -> text = "Отлично!";
+            case 'Б', 'b' -> text = "Много добре";
+            case 'C', 'c' -> text = "Добре";
+            case 'D', 'd' -> text = "Зле!";
+            default -> text = "Провал";
+        }
+        
+        System.out.println(text);
     }
 }
